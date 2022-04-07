@@ -7,7 +7,7 @@ Compared with the repo of [RITM codebase][ritmcode], ClickSEG has following new 
 
 #### **1. The official implementation for the following papers.** 
 > Conditional Diffusion for Interative Segmentation (ICCV2021) \[[Link][cdnet]\]  
-> FocalClick: Towards Practical Interactive Image Segmentation (CVPR2022) 
+> FocalClick: Towards Practical Interactive Image Segmentation (CVPR2022) \[[Link][focalclick]\]
 
 
 #### **2. More correct crop augmentation during training.**
@@ -39,7 +39,7 @@ In the paper of FocalClick, we propose a new dataset of DAVIS-585 which provides
 [albumentations]:https://albumentations.ai/
 [cdnet]: https://openaccess.thecvf.com/content/ICCV2021/papers/Chen_Conditional_Diffusion_for_Interactive_Segmentation_ICCV_2021_paper.pdf 
 
-[focalclick]: https://openaccess.thecvf.com/content/ICCV2021/papers/Chen_Conditional_Diffusion_for_Interactive_Segmentation_ICCV_2021_paper.pdf 
+[focalclick]: https://arxiv.org/pdf/2204.02574.pdf
 
 <br/>
 <br/>
