@@ -42,7 +42,8 @@ def serialize(init):
 
 
 def load_model(config, **kwargs):
-    model_class = get_class_from_str(config['class'])
+    configclass = 'app.ClickSEG.' + config['class'] if config['class'].startswith('isegm') else config['class']
+    model_class = get_class_from_str(configclass)
     model_default_params = get_default_params(model_class)
 
     model_args = dict()

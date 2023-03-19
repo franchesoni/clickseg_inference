@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 
-from clean_inference import load_controller
+from app.ClickSEG.clean_inference import load_controller
 
 def clean_inference_test():
   img = Image.open('../test_imgs/GrabCut_153093.jpg')
