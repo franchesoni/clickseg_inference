@@ -1,11 +1,11 @@
-from isegm.utils.exp_imports.default import *
+from app.ClickSEG.isegm.utils.exp_imports.default import *
 MODEL_NAME = 'cdnet_res34_sbd'
-from isegm.data.datasets.ade20k import ADE20kDataset
-from isegm.data.datasets.saliency import SaliencyDataset
-from isegm.data.compose import ComposeDataset,ProportionalComposeDataset
+from app.ClickSEG.isegm.data.datasets.ade20k import ADE20kDataset
+from app.ClickSEG.isegm.data.datasets.saliency import SaliencyDataset
+from app.ClickSEG.isegm.data.compose import ComposeDataset,ProportionalComposeDataset
 import torch.nn as nn
-from isegm.engine.cdnet_trainer import ISTrainer
-from isegm.data.aligned_augmentation import AlignedAugmentator
+from app.ClickSEG.isegm.engine.cdnet_trainer import ISTrainer
+from app.ClickSEG.isegm.data.aligned_augmentation import AlignedAugmentator
 
 def main(cfg):
     model, model_cfg = init_model(cfg)

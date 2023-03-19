@@ -5,9 +5,9 @@ import cv2
 import numpy as np
 from PIL import Image
 
-from interactive_demo.canvas import CanvasImage
-from interactive_demo.controller import InteractiveController
-from interactive_demo.wrappers import BoundedNumericalEntry, FocusHorizontalScale, FocusCheckButton, \
+from app.ClickSEG.interactive_demo.canvas import CanvasImage
+from app.ClickSEG.interactive_demo.controller import InteractiveController
+from app.ClickSEG.interactive_demo.wrappers import BoundedNumericalEntry, FocusHorizontalScale, FocusCheckButton, \
     FocusButton, FocusLabelFrame
 
 

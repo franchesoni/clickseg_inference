@@ -6,7 +6,7 @@ from torchvision import transforms
 from .points_sampler import MultiPointSampler
 from .sample import DSample
 import cv2
-from isegm.utils.crop_local import random_choose_target,get_bbox_from_mask,getLargestCC,expand_bbox, expand_bbox_with_bias
+from app.ClickSEG.isegm.utils.crop_local import random_choose_target,get_bbox_from_mask,getLargestCC,expand_bbox, expand_bbox_with_bias
 import skimage
 
 class ISDataset(torch.utils.data.dataset.Dataset):

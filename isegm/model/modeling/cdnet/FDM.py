@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from termcolor import cprint
 import torch.nn.functional as F
-from isegm.model.modeling.basic_blocks import SepConvHead, ConvHead
+from app.ClickSEG.isegm.model.modeling.basic_blocks import SepConvHead, ConvHead
 
 
 class SpatialNL(nn.Module):

@@ -4,7 +4,7 @@ Code Adopted from https://github.com/Tramac/mobilenetv3-segmentation/blob/master
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from isegm.model.modeling.efficientnet.backbone import efficientnet_b0
+from app.ClickSEG.isegm.model.modeling.efficientnet.backbone import efficientnet_b0
 
 
 

@@ -3,8 +3,8 @@ import json
 import random
 import numpy as np
 from pathlib import Path
-from isegm.data.base import ISDataset
-from isegm.data.sample import DSample
+from app.ClickSEG.isegm.data.base import ISDataset
+from app.ClickSEG.isegm.data.sample import DSample
 
 
 class CocoDataset(ISDataset):

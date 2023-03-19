@@ -1,9 +1,9 @@
-from isegm.utils.exp_imports.default import *
+from app.ClickSEG.isegm.utils.exp_imports.default import *
 MODEL_NAME = 'mobilenetv2_x1_comb'
-from isegm.data.compose import ComposeDataset,ProportionalComposeDataset
+from app.ClickSEG.isegm.data.compose import ComposeDataset,ProportionalComposeDataset
 import torch.nn as nn
-from isegm.data.aligned_augmentation import AlignedAugmentator
-from isegm.engine.baseline_trainer import ISTrainer
+from app.ClickSEG.isegm.data.aligned_augmentation import AlignedAugmentator
+from app.ClickSEG.isegm.engine.baseline_trainer import ISTrainer
 
 def main(cfg):
     model, model_cfg = init_model(cfg)

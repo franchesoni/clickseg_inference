@@ -3,11 +3,11 @@ from time import time
 import numpy as np
 import torch
 import os
-from isegm.inference import utils
-from isegm.inference.clicker import Clicker
+from app.ClickSEG.isegm.inference import utils
+from app.ClickSEG.isegm.inference.clicker import Clicker
 import shutil
 import cv2
-from isegm.utils.vis import add_tag
+from app.ClickSEG.isegm.utils.vis import add_tag
 
 
 

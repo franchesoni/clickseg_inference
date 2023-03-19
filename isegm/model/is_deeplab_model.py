@@ -1,14 +1,14 @@
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
-from isegm.utils.serialization import serialize
+from app.ClickSEG.isegm.utils.serialization import serialize
 from .is_model import ISModel
 from .modeling.deeplab_v3 import DeepLabV3Plus
 from .modeling.basic_blocks import SepConvHead
-from isegm.model.modifiers import LRMult
-from isegm.model.modeling.cdnet.FDM import FDM
-from isegm.model.modeling.cdnet.PDM import PDM
-from isegm.model.ops import DistMaps
+from app.ClickSEG.isegm.model.modifiers import LRMult
+from app.ClickSEG.isegm.model.modeling.cdnet.FDM import FDM
+from app.ClickSEG.isegm.model.modeling.cdnet.PDM import PDM
+from app.ClickSEG.isegm.model.ops import DistMaps
 import math
 
 class DeeplabModel(ISModel):

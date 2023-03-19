@@ -6,8 +6,8 @@ import torch.nn.functional as F
 
 from .basic_blocks import SeparableConv2d
 from .resnet import ResNetBackbone
-from isegm.model import ops
-from isegm.model.modeling.cdnet.FDM import FDM, FDM_v2, FDM_v3
+from app.ClickSEG.isegm.model import ops
+from app.ClickSEG.isegm.model.modeling.cdnet.FDM import FDM, FDM_v2, FDM_v3
 
 class DeepLabV3Plus(nn.Module):
     def __init__(self, backbone='resnet50', norm_layer=nn.BatchNorm2d,

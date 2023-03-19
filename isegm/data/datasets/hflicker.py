@@ -3,8 +3,8 @@ from pathlib import Path
 import cv2
 import numpy as np
 import os
-from isegm.data.base import ISDataset
-from isegm.data.sample import DSample
+from app.ClickSEG.isegm.data.base import ISDataset
+from app.ClickSEG.isegm.data.sample import DSample
 
 
 class HFlickerDataset(ISDataset):

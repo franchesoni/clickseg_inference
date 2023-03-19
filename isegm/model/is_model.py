@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import numpy as np
 
-from isegm.model.ops import DistMaps, ScaleLayer, BatchImageNormalize
-from isegm.model.modifiers import LRMult
+from app.ClickSEG.isegm.model.ops import DistMaps, ScaleLayer, BatchImageNormalize
+from app.ClickSEG.isegm.model.modifiers import LRMult
 
 
 class ISModel(nn.Module):

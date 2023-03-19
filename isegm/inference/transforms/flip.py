@@ -1,7 +1,7 @@
 import torch
 
 from typing import List
-from isegm.inference.clicker import Click
+from app.ClickSEG.isegm.inference.clicker import Click
 from .base import BaseTransform
 
 

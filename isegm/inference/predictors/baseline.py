@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F
 from torchvision import transforms
-from isegm.inference.transforms import AddHorizontalFlip, SigmoidForPred, LimitLongestSide, ResizeTrans
+from app.ClickSEG.isegm.inference.transforms import AddHorizontalFlip, SigmoidForPred, LimitLongestSide, ResizeTrans
 
 
 class BaselinePredictor(object):

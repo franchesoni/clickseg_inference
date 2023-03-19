@@ -4,9 +4,9 @@ from pathlib import Path
 import torch
 import numpy as np
 
-from isegm.data.datasets import GrabCutDataset, BerkeleyDataset, DavisDataset, SBDEvaluationDataset, PascalVocDataset, Davis585Dataset, COCOMValDataset
+from app.ClickSEG.isegm.data.datasets import GrabCutDataset, BerkeleyDataset, DavisDataset, SBDEvaluationDataset, PascalVocDataset, Davis585Dataset, COCOMValDataset
 
-from isegm.utils.serialization import load_model
+from app.ClickSEG.isegm.utils.serialization import load_model
 
 
 def get_time_metrics(all_ious, elapsed_time):

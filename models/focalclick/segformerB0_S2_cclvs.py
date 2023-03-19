@@ -1,9 +1,9 @@
-from isegm.utils.exp_imports.default import *
+from app.ClickSEG.isegm.utils.exp_imports.default import *
 MODEL_NAME = 'segformerB0_S2_cclvs'
-from isegm.data.datasets.lvis import LvisDataset
-from isegm.data.compose import ComposeDataset,ProportionalComposeDataset
-from isegm.data.aligned_augmentation import AlignedAugmentator
-from isegm.engine.focalclick_trainer import ISTrainer
+from app.ClickSEG.isegm.data.datasets.lvis import LvisDataset
+from app.ClickSEG.isegm.data.compose import ComposeDataset,ProportionalComposeDataset
+from app.ClickSEG.isegm.data.aligned_augmentation import AlignedAugmentator
+from app.ClickSEG.isegm.engine.focalclick_trainer import ISTrainer
 import torch.nn as nn
 
 

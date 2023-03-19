@@ -3,8 +3,8 @@ from .baseline import BaselinePredictor
 from .focalclick import FocalPredictor
 from .brs import InputBRSPredictor, FeatureBRSPredictor, HRNetFeatureBRSPredictor
 from .brs_functors import InputOptimizer, ScaleBiasOptimizer
-from isegm.inference.transforms import ZoomIn
-from isegm.model.is_hrnet_model import HRNetModel
+from app.ClickSEG.isegm.inference.transforms import ZoomIn
+from app.ClickSEG.isegm.model.is_hrnet_model import HRNetModel
 
 
 def get_predictor(net, brs_mode, device,

@@ -1,7 +1,7 @@
 import torch
 from torch import nn as nn
 import numpy as np
-import isegm.model.initializer as initializer
+import app.ClickSEG.isegm.model.initializer as initializer
 
 
 def select_activation_function(activation):
@@ -42,7 +42,7 @@ class DistMaps(nn.Module):
         self.cpu_mode = cpu_mode
         self.use_disks = use_disks
         if self.cpu_mode:
-            from isegm.utils.cython import get_dist_maps
+            from app.ClickSEG.isegm.utils.cython import get_dist_maps
             self._get_dist_maps = get_dist_maps
 
     def get_coord_features(self, points, batchsize, rows, cols):

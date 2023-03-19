@@ -5,8 +5,8 @@ import os.path as osp
 import os
 import json
 from PIL import Image
-from isegm.data.base import ISDataset
-from isegm.data.sample import DSample
+from app.ClickSEG.isegm.data.base import ISDataset
+from app.ClickSEG.isegm.data.sample import DSample
 
 class YouTubeDataset(ISDataset):
     def __init__(self, dataset_path=None,

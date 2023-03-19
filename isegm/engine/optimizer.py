@@ -1,6 +1,6 @@
 import torch
 import math
-from isegm.utils.log import logger
+from app.ClickSEG.isegm.utils.log import logger
 
 
 def get_optimizer(model, opt_name, opt_kwargs):

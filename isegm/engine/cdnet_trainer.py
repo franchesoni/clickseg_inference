@@ -10,11 +10,11 @@ import numpy as np
 from tqdm import tqdm
 from torch.utils.data import DataLoader
 
-from isegm.utils.log import logger, TqdmToLogger, SummaryWriterAvg
-from isegm.utils.vis import draw_probmap, draw_points, add_tag
-from isegm.utils.misc import save_checkpoint
-from isegm.utils.serialization import get_config_repr
-from isegm.utils.distributed import get_dp_wrapper, get_sampler, reduce_loss_dict
+from app.ClickSEG.isegm.utils.log import logger, TqdmToLogger, SummaryWriterAvg
+from app.ClickSEG.isegm.utils.vis import draw_probmap, draw_points, add_tag
+from app.ClickSEG.isegm.utils.misc import save_checkpoint
+from app.ClickSEG.isegm.utils.serialization import get_config_repr
+from app.ClickSEG.isegm.utils.distributed import get_dp_wrapper, get_sampler, reduce_loss_dict
 from .optimizer import get_optimizer
 from torch.cuda.amp import autocast as autocast, GradScaler
 scaler = GradScaler()
