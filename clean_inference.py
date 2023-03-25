@@ -80,7 +80,8 @@ torch.serialization._load = my_load
 def load_controller(logger=None):
     if logger is not None:
         logger.info('Loading focalclick controller...')
-    checkpoint_path = utils.find_checkpoint('/code/app/weights/focalclick_models/', 'combined_segformerb3s2.pth')
+    # checkpoint_path = utils.find_checkpoint('/code/app/weights/focalclick_models/', 'combined_segformerb3s2.pth')
+    checkpoint_path = utils.find_checkpoint('app/weights/focalclick_models/', 'combined_segformerb3s2.pth')
 
     torch.backends.cudnn.deterministic = True
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
@@ -90,10 +91,12 @@ def load_controller(logger=None):
                                                 update_image_callback=None)
     def update_image_callback(reset_canvas=True):
       img = controller.get_visualization(0.5, 5)
-      Image.fromarray(img).save('/vol/out.png')  # when in container
-      # Image.fromarray(img).save('../results/out.png')
+    #   Image.fromarray(img).save('/vol/out.png')  # when in container
+      Image.fromarray(img).save('out.png')
 
     controller.update_image_callback = update_image_callback
     return controller
+
+
 
 
